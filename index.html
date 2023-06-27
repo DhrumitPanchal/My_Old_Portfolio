@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header" id="Home">
+      <div class="container">
+        <nav>
+          <a href=""
+            ><div class="logo"><span>D</span>hrumit</div></a
+          >
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <div class="header-text">
+            Hi, i’m <span>developer</span>. <br />
+            I love develop next <br />
+            generation products!
+          </div>
+          <div class="btn-container">
+            <a class="btn">Resume</a>
+            <a class="btn">Get In Touch!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================= about as ===================================== -->
+
+    <div class="about" id="About">
+      <div class="row">
+        <div class="about-col-1">
+          <div>
+            <img src="images//IMG_20230626_180406.jpg" alt="" />
+          </div>
+        </div>
+        <div class="about-col-2">
+          <p class="intro">
+            Hello! <br />
+            My name is <span>Dhrumit</span>, I am a
+            <span>web developer</span>,<span> UI designer</span> and
+            <span>sketch artist</span>.
+          </p>
+
+          
+          <div class="about-link-tabs">
+          <div class="teb-titles">
+            <p class="teb-links active-link" onclick="opentab('about')">About</p>
+            <p class="teb-links" onclick="opentab('skills')">Skills</p>
+            <p class="teb-links" onclick="opentab('experience')">Experience</p>
+            <p class="teb-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="about">  
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              odit architecto doloribus exercitationem fugit porro laborum,
+              culpa asperiores suscipit dicta ipsam voluptatem consequatur
+              temporibus iusto assumenda sint! Dicta, dignissimos eum?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              odit architecto doloribus exercitationem fugit porro laborum,
+              culpa asperiores suscipit dicta ipsam voluptatem consequatur
+              temporibus iusto assumenda sint! Dicta, dignissimos eum?
+          </div>
+
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>Web Devlopment</span><br />HTML,CSS and JAVASCRIPT</li>
+              <li>
+                <span>Backend Language</span><br />SQL and PLSQL for Backend
+              </li>
+              <li>
+                <span>Logic Development</span><br />C and C++ for Logic
+                Devlopment
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Fresher</span></li>
+              <!-- <li><span>UI?UX</span><br>Designing Web/app interfaces</li>
+                      <li><span>000 Devlopment</span><br> Web app Devlopment</li>
+                      <li><span>App Devlopment</span><br>Building Android/ios apps</li> -->
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>BCA</span><br />From Silver Oak University</li>
+              <li>
+                <span>HSC</span><br />Completed my Higher Schooling (HSC) <br />
+                from Mangaldeep School school
+              </li>
+              <li>
+                <span>SSC</span><br />Completed my Secondary Schooling (SSC)
+                <br />
+                from Ranchena School school
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- ================================= My Services ===================================== -->
+
+    <div class="diwider-line" ></div>
+
+    <div class="Services" id="Services">
+      <h1>My Services</h1>
+      <div class="services-container">
+        <div class="box box1">
+          <div class="image">
+            <img src="" alt="">
+          </div>
+          <div class="box-content">
+            <h2>Web Development</h2>
+            <p>Web developers design and build websites. They are typically responsible for the appearance, 
+              of the site and technical aspects, such as site speed and how much traffic the site can handle.
+               Web developers may also create site content that requires technical features.</p>
+               <button href="">Explore</button>
+          </div>
+        </div>
+
+        <div class="box box2">
+          <div class="image">
+            <img src="" alt="">
+          </div>
+          <div class="box-content">
+            <h2>Web UI Designer</h2>
+            <p>A UI UX designer is a professional who identifies new opportunities to create better user experiences.
+              Aesthetically pleasing branding strategies help them effectively reach more customers.
+               They also ensure that the end-to-end journey with their products or services meets desired outcomes.
+            </p>
+               <button href="">Explore</button>
+          </div>
+        </div>
+
+        <div class="box box3">
+          <div class="image">
+            <img src="" alt="">
+          </div>
+          <div class="box-content">
+            <h2>Sketch Artist</h2>
+            <p>Web developers design and build websites. They are typically responsible for the appearance, 
+              of the site and technical aspects, such as site speed and how much traffic the site can handle.
+               Web developers may also create site content that requires technical features.</p>
+               <button href="">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
