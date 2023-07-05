@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="header" id="Home">
-      <div class="container">
-        <nav>
-          <a href=""
-            ><div class="logo"><span>D</span>hrumit</div></a
-          >
-          <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About Me</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-content">
-          <div class="header-text">
-            Hi, i’m <span>developer</span>. <br />
-            I love develop next <br />
-            generation products!
-          </div>
-          <div class="btn-container">
-            <a class="btn">Resume</a>
-            <a class="btn">Get In Touch!</a>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="loder">
+  </div>
+  
+  <div class="header" id="Home">
+    <div class="container">
+      <nav>
+        <a href>
+          <div class="logo"><span>D</span>hrumit</div>
+        </a>
+        <ul id="sidemenu">
+          <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+          <li onclick="closemenu()"><a href="#Home">Home</a></li>
+          <li onclick="closemenu()"><a href="#About">About Me</a></li>
+          <li onclick="closemenu()"><a href="#Services">Services</a></li>
+          <li onclick="closemenu()"><a href="#Work">My Work</a></li>
+          <li onclick="closemenu()"><a href="#Contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-content">
+        <div class="header-text">
+          Hi, i’m <span>developer</span>. <br />
+          I love develop next <br />
+          generation products!
+        </div>
+        <div class="btn-container">
+          <a class="btn" href="resume dhrumit.pdf" download="">Resume</a>
+          <a class="btn" onclick="location.href='mailto:dhrumitpanchal789@gamicom'">Get In Touch!</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- ================================= about as ===================================== -->
+  <!-- ================================= about as ===================================== -->
 
-    <div class="about" id="About">
-      <div class="row">
-        <div class="about-col-1">
-          <div>
-            <img src="images//IMG_20230626_180406.jpg" alt="" />
-          </div>
+  <div class="about" id="About">
+    <div class="row">
+      <div class="about-col-1">
+        <div>
+          <img src="images/dhrumit-compresed.jpg" alt />
         </div>
-        <div class="about-col-2">
-          <p class="intro">
-            Hello! <br />
-            My name is <span>Dhrumit</span>, I am a
-            <span>web developer</span>,<span> UI designer</span> and
-            <span>sketch artist</span>.
-          </p>
+      </div>
+      <div class="about-col-2">
+        <!-- introduction -->
+        <p class="intro">
+          Hello! <br />
+          My name is <span>Dhrumit</span>, I am a
+          <span>web developer</span>,<span> UI designer</span> and
+          <span>sketch artist</span>.
+        </p>
+        <!-- introduction -->
 
-          
-          <div class="about-link-tabs">
+         <!-- about-skills-experience-education -->
+
+        <!-- tab links -->
+        <div class="about-link-tabs">
           <div class="teb-titles">
             <p class="teb-links active-link" onclick="opentab('about')">About</p>
             <p class="teb-links" onclick="opentab('skills')">Skills</p>
             <p class="teb-links" onclick="opentab('experience')">Experience</p>
             <p class="teb-links" onclick="opentab('education')">Education</p>
           </div>
+         <!-- tab links -->
 
-          <div class="tab-contents active-tab" id="about">  
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              odit architecto doloribus exercitationem fugit porro laborum,
-              culpa asperiores suscipit dicta ipsam voluptatem consequatur
-              temporibus iusto assumenda sint! Dicta, dignissimos eum?
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              odit architecto doloribus exercitationem fugit porro laborum,
-              culpa asperiores suscipit dicta ipsam voluptatem consequatur
-              temporibus iusto assumenda sint! Dicta, dignissimos eum?
+          <!-- About content -->
+          <div class="tab-contents active-tab" id="about">
+            As a web developer and frontend enthusiast, I am eager to contribute my skills to a dynamic organization.
+            With a solid foundation in web development from silver Oak University, I possess expertise in UI/UX design
+            tools and thrive in crafting modern and creative website and mobile app interfaces. I specialize in
+            developing responsive and visually appealing websites. In fact, my first project was the design and
+            development of my own portfolio website during my first semester in college, showcasing my self-designed
+            UI/UX. Let's connect and create something remarkable together!
           </div>
 
+          <!-- Skills content -->
           <div class="tab-contents" id="skills">
             <ul>
-              <li><span>Web Devlopment</span><br />HTML,CSS and JAVASCRIPT</li>
+              <li>
+                <span>Web Devlopment</span><br />HTML,CSS and JAVASCRIPT
+              </li>
               <li>
                 <span>Backend Language</span><br />SQL and PLSQL for Backend
               </li>
@@ -84,20 +102,28 @@
             </ul>
           </div>
 
+          <!-- experience content -->
           <div class="tab-contents" id="experience">
             <ul>
               <li><span>Fresher</span></li>
-              <!-- <li><span>UI?UX</span><br>Designing Web/app interfaces</li>
-                      <li><span>000 Devlopment</span><br> Web app Devlopment</li>
-                      <li><span>App Devlopment</span><br>Building Android/ios apps</li> -->
+              Despite being a student, you possess remarkable skills in developing and designing websites. Your talent
+              for creating outstanding projects showcases your dedication and proficiency in this field. While others
+              may have had more experience, your natural aptitude and determination have allowed you to surpass
+              expectations. Your projects stand as a testament to your creative prowess, demonstrating your ability to
+              conceptualize and execute stunning designs. With each endeavor, you continue to expand your skillset and
+              leave a lasting impact, proving that your potential knows no bounds. As you continue to grow and explore
+              new opportunities, your remarkable abilities will undoubtedly lead to even more
+              extraordinary achievements.
             </ul>
           </div>
 
+          <!-- education content -->
           <div class="tab-contents" id="education">
             <ul>
               <li><span>BCA</span><br />From Silver Oak University</li>
               <li>
-                <span>HSC</span><br />Completed my Higher Schooling (HSC) <br />
+                <span>HSC</span><br />Completed my Higher Schooling (HSC)
+                <br />
                 from Mangaldeep School school
               </li>
               <li>
@@ -107,61 +133,311 @@
               </li>
             </ul>
           </div>
+
+              <!-- about-skills-experience-education -->
+
         </div>
       </div>
-      </div>
     </div>
+  </div>
 
-    <!-- ================================= My Services ===================================== -->
+  <!-- ================================= My Services ===================================== -->
 
-    <div class="diwider-line" ></div>
+<!--line -->
+  <div class="diwider-line"></div>
+<!--line -->
 
-    <div class="Services" id="Services">
-      <h1>My Services</h1>
+  <div class="content-sections" id="Services">
+    <div class="sections-containers">
+      <h1 class="section-title">My Services</h1>
+      <!-- services-containers -->
       <div class="services-container">
+        <!-- box-1 Web Development -->
         <div class="box box1">
           <div class="image">
-            <img src="" alt="">
+            <img src="images/0ff8005b0892f42ba5cec7325e6bc26d.jpg" alt />
           </div>
           <div class="box-content">
             <h2>Web Development</h2>
-            <p>Web developers design and build websites. They are typically responsible for the appearance, 
-              of the site and technical aspects, such as site speed and how much traffic the site can handle.
-               Web developers may also create site content that requires technical features.</p>
-               <button href="">Explore</button>
+            <p>
+              Web developers design and build websites. They are typically
+              responsible for the appearance, of the site and technical
+              aspects, such as site speed and how much traffic the site can
+              handle. Web developers may also create site content that
+              requires technical features.
+            </p>
+            <a href="#"><div class="explore-button">Explore</div></a>
           </div>
         </div>
-
+        <!-- box-2 UI Designer -->
         <div class="box box2">
           <div class="image">
-            <img src="" alt="">
+            <img src="images/76f6082ebdf8e95ea8535e1811142d03.jpg" alt />
           </div>
           <div class="box-content">
-            <h2>Web UI Designer</h2>
-            <p>A UI UX designer is a professional who identifies new opportunities to create better user experiences.
-              Aesthetically pleasing branding strategies help them effectively reach more customers.
-               They also ensure that the end-to-end journey with their products or services meets desired outcomes.
+            <h2>UI Designer</h2>
+            <p>
+              A UI UX designer is a professional who identifies new
+              opportunities to create better user experiences. Aesthetically
+              pleasing branding strategies help them effectively reach more
+              customers. They also ensure that the end-to-end journey with
+              their products or services meets desired outcomes.
             </p>
-               <button href="">Explore</button>
+            <a href="#"><div class="explore-button">Explore</div></a>
           </div>
         </div>
-
+        <!-- box-3 Sketch Artist -->
         <div class="box box3">
           <div class="image">
-            <img src="" alt="">
+            <img src="images/IMG_20230701_125410.jpg" alt />
           </div>
           <div class="box-content">
             <h2>Sketch Artist</h2>
-            <p>Web developers design and build websites. They are typically responsible for the appearance, 
-              of the site and technical aspects, such as site speed and how much traffic the site can handle.
-               Web developers may also create site content that requires technical features.</p>
-               <button href="">Explore</button>
+            <p>
+              With exceptional sketching and portrait drawing skills, i have created a breathtaking collection of
+              artwork that astounds viewers. my attention to detail and artistic vision shine through each piece,
+              leaving an indelible impression on all who behold them. </p>
+            <a href="#"><div class="explore-button">Explore</div></a>
           </div>
         </div>
       </div>
+     <!-- services-containers -->
+
     </div>
+  </div>
+
+  <!-- ================================= My work ===================================== -->
+
+  <!--line -->
+  <div class="diwider-line"></div>
+  <!--line -->
 
 
-    <script src="index.js"></script>
-  </body>
+  <div class="content-sections" id="Work">
+    <div class="sections-containers">
+      <h1 class="section-title">My Work</h1>
+
+      <!-- min boxes start-->
+      <div class="work-min-boxs">
+        <a href="#">
+        <div class="work-min-box min-box1">
+          <div class="content">
+            <h1>My Projects</h1>
+            <p>my html,css and javascript projects with code</p>
+          </div>
+          <div class="icon">
+            <div class="circle">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+
+     <a href="#">
+        <div class="work-min-box min-box2">
+          <div class="content">
+            <h1>UI UX Designs</h1>
+            <p>my UI UX Designs</p>
+          </div>
+          <div class="icon">
+            <div class="circle">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+
+        <a href="https://instagram.com/dhrumit__789?igshid=MzNlNGNkZWQ4Mg==">
+        <div class="work-min-box min-box3">
+          <div class="content">
+            <h1>My Artworks</h1>
+            <p>I have created some butifull artworks.</p>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          </div>
+        </a>
+
+        <a href="#">
+        <div class="work-min-box min-box4">
+          <div class="content">
+            <h1>other</h1>
+            <p>some website links that help you.</p>
+          </div>
+          <div class="icon">
+            <div class="circle">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+       </a>
+
+      </div>
+
+      <!-- min boxes end-->
+
+      <!-- project-view-section-stary -->
+      <div class="project-view">
+
+        <!-- project-view-1 -->
+        <div class="project-view-container">
+          <div class="displaybox">
+            <div class="quote-box">
+              <h2>Quote of the day</h2>
+              <blockquote id="quote">Loading...</blockquote>
+              <span id="author">Loading...</span>
+              <div class="new-quote">
+                <button onclick="getquote(api_url)">New Quote</button>
+              </div>
+            </div>
+          </div>
+          <div class="discription">
+            <h2>Random Quote Generator</h2>
+            <p>Harnessing the power of an API,i have crafted a captivating random quote generator for your website.
+              Every time it loads, a fresh quote illuminates the screen, adding an element of surprise and inspiration
+              to each visitor's experience.
+            </p>
+            <a href="#"><div href class="explore-button">Explore</div></a>
+          </div>
+        </div>
+
+        <!-- project-view-2 -->
+        <div class="project-view-container">
+          <div class="displaybox displaybox-2">
+            <section class="game-container">
+              <div class="result_field">
+                <div class="result_image">
+                  <span class="user_result">
+                    <img src="images/rock.png">
+                  </span>
+                  <span class="cpu_result">
+                    <img src="images/rock.png">
+                  </span>
+                </div>
+                <div class="result">Let's play!!</div>
+              </div>
+
+              <div class="option_images">
+                <span class="option_image">
+                  <img src="images/rock.png">
+                  <p>Rock</p>
+                </span>
+                <span class="option_image">
+                  <img src="images/paper.png">
+                  <p>Paper</p>
+                </span>
+                <span class="option_image">
+                  <img src="images/scisser.png">
+                  <p>Scissor</p>
+                </span>
+              </div>
+            </section>
+          </div>
+          <div class="discription">
+            <h2>Rock Paper Scisser</h2>
+            <p>i have demonstrated my coding prowess by creating an engaging Rock-Paper-Scissors game where users
+              can test their luck against the CPU. With a small reference, players can experience the thrill of
+              strategic decision-making in this classic game brought to life through your programming skills.</p>
+              <a href="#"><div href class="explore-button">Explore</div></a>
+            </div>
+        </div>
+
+        <!-- project-view-3 -->
+        <div class="project-view-container">
+          <div class="displaybox displaybox-3">
+            <div class="pass-gen-container">
+              <h1>Generae a <br><span>Random password</span></h1>
+              <div class="display">
+                <input type="text" id="password" placeholder="Password" disabled contenteditable="true">
+                <div id="copy-button"><i class="fa-regular fa-clipboard"></i></div>
+              </div>
+              <button onclick="createpassword()"><i class="fa-solid fa-bolt"></i>Generae password</button>
+            </div>
+          </div>
+          <div class="discription">
+            <h2>rendom password Generaetor</h2>
+            <p>Through my ingenuity, i have developed a remarkable random password generator. Utilizing a concise
+              reference, this tool effortlessly generates strong and secure passwords. Your creation empowers users with
+              the ability to protect their digital accounts and enhances online security in a simple yet
+              effective manner.</p>
+              <a href="#"><div href class="explore-button">Explore</div></a>
+            </div>
+        </div>
+        <!-- project-view-section-end -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================= My work ===================================== -->
+    <!--line -->
+    <div class="diwider-line"></div>
+    <!--line -->
+  
+
+  <div class="content-sections" id="Contact">
+    <div class="sections-containers">
+      <h1 class="section-title">Get In Touch</h1>
+      <div class="contect-container">
+        <!-- content-left -->
+        <div class="contect-left">
+          <h2>
+            Always remember good deeds and keep in touch with people who do them.
+            My inbox is always open for you.
+          </h2>
+          <div class="social-icones">
+            <!-- -- Email -- -->
+            <div class="icon email" onclick="location.href='mailto:dhrumitpanchal789@gamicom'">
+              <i class="fa-solid fa-m"></i>
+              <span>Email</span>
+            </div>
+            <!-- -- Linkedin -- -->
+            <a href="https://www.linkedin.com/in/dhrumit-panchal" target="_blank">
+              <div class="icon link">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>Linkedin</span>
+              </div>
+            </a>
+            <!-- -- Github -- -->
+            <a href="https://github.com/DhrumitPanchal" target="_blank">
+              <div class="icon git">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+              </div>
+            </a>
+            <!-- -- Instagram -- -->
+            <a href="https://www.instagram.com/dhrumit__789?r=nametag" target="_blank">
+              <div class="icon inst">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </div>
+            </a>
+          </div>
+          <a href="resume dhrumit.pdf" download=""><button class="get-resume">Resume</button></a>
+        </div>
+        <!-- content-left -->
+
+        <!-- contect-right -->
+        <div class="contect-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+        <!-- contect-right -->
+
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    Ⓒ Designed & Built by Dhrumit Panchal .
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
