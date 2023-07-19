@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
-
 :root {
   --extra-dark: #041d25;
   --mideam-dark: #073645;
@@ -11,7 +9,7 @@
 }
 html {
   font-size: calc(1vw);
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -41,19 +39,19 @@ html {
   text-decoration: none;
   color: white;
   user-select: none;
-  outline:none;
+  outline: none;
   border: none;
-
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   /* font-family: 'Source Code Pro', monospace; */
 }
 body {
   background: var(--extra-dark);
 }
-#loder{
+#loder {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background: rgb(0, 0, 0) url('images/loder-d-.gif') no-repeat center;
+  background: rgb(0, 0, 0) url("images/loder-d-.gif") no-repeat center;
   z-index: 5;
   background-size: 30%;
 }
@@ -95,6 +93,7 @@ nav ul li a {
   font-size: 1.2rem;
   position: relative;
   transition: 0.5s;
+  font-family: sans-serif;
 }
 nav ul li a:hover {
   color: var(--lite-main);
@@ -113,7 +112,8 @@ nav ul li a:hover:after {
   width: 100%;
 }
 
-.header .fa-xmark,.header .fa-bars{
+.header .fa-xmark,
+.header .fa-bars {
   display: none;
 }
 
@@ -134,7 +134,7 @@ nav ul li a:hover:after {
   margin-top: 3%;
   gap: 2%;
 }
-.header-content .btn-container .btn{
+.header-content .btn-container .btn {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -231,6 +231,8 @@ nav ul li a:hover:after {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  font-family: sans-serif;
+
 }
 .teb-links::after {
   content: "";
@@ -250,29 +252,36 @@ nav ul li a:hover:after {
 }
 .tab-contents {
   font-size: 1.2rem;
+  font-family: sans-serif;
+
 }
 .tab-contents ul li {
   list-style: none;
   margin: 0.7rem 0;
+  font-family: sans-serif;
+
 }
 .tab-contents ul li span {
   color: var(--lite-main);
   font-size: 1.5rem;
+  font-family: sans-serif;
+
 }
 .tab-contents {
   display: none;
+  font-family: sans-serif;
+
 }
 .tab-contents.active-tab {
   display: block;
 }
 
-
 /* some coman elements in different section */
 
-.content-sections{
+.content-sections {
   border: 1px solid transparent;
 }
-.sections-containers{
+.sections-containers {
   margin: 4rem 2rem 7rem;
 }
 .section-title {
@@ -322,10 +331,10 @@ nav ul li a:hover:after {
   border: 0.2rem solid var(--lite-main);
   color: var(--lite-main);
   background: transparent;
+  
 }
 
 /* --------------------end----------------------- */
-
 
 /* ===================================  services  ====================================== */
 
@@ -363,8 +372,9 @@ nav ul li a:hover:after {
 }
 .services-container .box-content p {
   margin: 0 1.2rem;
-}
+  font-family: sans-serif;
 
+}
 
 /* =================================== my work ====================================== */
 .work-min-boxs {
@@ -391,6 +401,9 @@ nav ul li a:hover:after {
 .work-min-box h1 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
+}
+.work-min-box p{
+  font-family: sans-serif;
 }
 .work-min-box .circle {
   display: flex;
@@ -442,6 +455,8 @@ nav ul li a:hover:after {
 }
 .project-view-container .discription p {
   font-size: 1.5rem;
+  font-family: sans-serif;
+
 }
 .project-view-container .displaybox-2 {
   order: 2;
@@ -463,8 +478,8 @@ nav ul li a:hover:after {
 .quote-box h2::after {
   content: "";
   width: 6rem;
-  height: .2rem;
-  border-radius: .2rem;
+  height: 0.2rem;
+  border-radius: 0.2rem;
   background: var(--Transparent-white);
   position: absolute;
   bottom: -0.7rem;
@@ -491,8 +506,8 @@ nav ul li a:hover:after {
 .quote-box span::before {
   content: "";
   width: 1rem;
-  height: .1rem;
-  background:var(--lite-main);
+  height: 0.1rem;
+  background: var(--lite-main);
   position: absolute;
   top: 50%;
   left: -1.5rem;
@@ -517,70 +532,70 @@ nav ul li a:hover:after {
 }
 
 /* rock paper Scissor*/
- .game-container{
+.game-container {
   height: 100%;
   width: 100%;
   /* padding: 2rem 7rem; */
 }
-.result_image{
+.result_image {
   display: flex;
   column-gap: 7rem;
   justify-content: center;
   margin: 1.5rem 0;
 }
-.game-container.start .user_result{
+.game-container.start .user_result {
   transform-origin: left;
-animation: usershake 0.7s ease infinite;
+  animation: usershake 0.7s ease infinite;
 }
-@keyframes usershake{
-  50%{
-      transform: rotate(10deg);
+@keyframes usershake {
+  50% {
+    transform: rotate(10deg);
   }
 }
-.game-container.start .cpu_result{
+.game-container.start .cpu_result {
   transform-origin: right;
   animation: cpushake 0.7s ease infinite;
 }
-@keyframes cpushake{
-  50%{
-      transform: rotate(-10deg);
+@keyframes cpushake {
+  50% {
+    transform: rotate(-10deg);
   }
 }
-.result_image img{
+.result_image img {
   width: 8rem;
 }
-.user_result img{
-transform: rotate(90deg);
+.user_result img {
+  transform: rotate(90deg);
 }
-.cpu_result img{
+.cpu_result img {
   transform: rotate(-90deg) rotateY(180deg);
 }
-.result{
+.result {
   text-align: center;
   font-size: 2rem;
-  color:white;
+  color: white;
   margin-top: 2.5rem;
 }
-.option_image img{
+.option_image img {
   width: 5rem;
 }
-.game-container.start .option_images{
+.game-container.start .option_images {
   pointer-events: none;
 }
-.option_images{
+.option_images {
   display: flex;
   align-items: center;
   margin: 3rem auto;
   justify-content: space-between;
   opacity: 0.5;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
   width: 70%;
 }
-.option_images:hover{
+.option_images:hover {
   opacity: 1;
 }
 
-.option_image{
+.option_image {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -588,16 +603,16 @@ transform: rotate(90deg);
   cursor: pointer;
   transition: opacity 0.5s ease;
 }
-.option_image:hover{
+.option_image:hover {
   opacity: 1;
 }
-.option_image.active{
+.option_image.active {
   opacity: 1;
 }
-.option_image img{
-  pointer-events:none;
+.option_image img {
+  pointer-events: none;
 }
-.option_image p{
+.option_image p {
   color: white;
   font-size: 1.235rem;
   margin-top: 1rem;
@@ -605,11 +620,11 @@ transform: rotate(90deg);
 }
 
 /*rendome password genrator*/
-.pass-gen-container{
-  margin:3rem 2.5rem;
+.pass-gen-container {
+  margin: 3rem 2.5rem;
   width: 100%;
 }
-.display{
+.display {
   width: 100%;
   margin-top: 4rem;
   margin-bottom: 2.5rem;
@@ -621,28 +636,28 @@ transform: rotate(90deg);
   padding: 1.7rem 1.5rem;
   border-radius: 0.5rem;
 }
-.pass-gen-container h1{
+.pass-gen-container h1 {
   font-weight: 500;
   font-size: 2.5rem;
 }
-.pass-gen-container h1 span{
+.pass-gen-container h1 span {
   color: var(--lite-main);
-  border-bottom: .3rem solid var(--lite-main);
-  padding-bottom: .3rem;
+  border-bottom: 0.3rem solid var(--lite-main);
+  padding-bottom: 0.3rem;
 }
-.display i{
+.display i {
   width: 2rem;
   font-size: 2rem;
   cursor: pointer;
   color: var(--lite-dark);
 }
-.display input{
+.display input {
   border: 0;
   outline: none;
   font-size: 1.7rem;
-  color:#333 ;
+  color: #333;
 }
-.pass-gen-container button{
+.pass-gen-container button {
   border: 0;
   outline: none;
   background: var(--lite-dark);
@@ -655,20 +670,19 @@ transform: rotate(90deg);
   padding: 1rem 2rem;
   cursor: pointer;
 }
-.pass-gen-container button i{
-  margin-right: .3rem;
+.pass-gen-container button i {
+  margin-right: 0.3rem;
 }
 
 /* =================================  contect section  ====================================== */
-.contect-container{
+.contect-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
   margin: 6rem 6rem 0 6rem;
-
 }
-.contect-container .contect-left{
+.contect-container .contect-left {
   flex-basis: 45%;
   display: flex;
   height: 22rem;
@@ -677,11 +691,12 @@ transform: rotate(90deg);
   justify-content: space-between;
   flex-direction: column;
 }
-.contect-left h2{
+.contect-left h2 {
   width: 25rem;
+  font-family: sans-serif;
 
 }
-.social-icones{
+.social-icones {
   display: flex;
   align-items: center;
 }
@@ -696,11 +711,11 @@ transform: rotate(90deg);
   overflow: hidden;
   line-height: 3.6rem;
   /* box-shadow: 0.2rem .2 1rem var(--lite-dark); */
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   font-family: sans-serif;
 }
 
-.icon:hover{
+.icon:hover {
   width: 15rem;
   cursor: pointer;
   display: flex;
@@ -708,46 +723,52 @@ transform: rotate(90deg);
   justify-content: space-evenly;
   color: white;
 }
-.icon:hover i{
+.icon:hover i {
   color: #fff;
 }
-.icon .fa-m{
+.icon .fa-m {
   color: rgb(211, 26, 26);
 }
-.email:hover{
+.email:hover {
   background: rgb(211, 26, 26);
 }
-.icon .fa-linkedin-in{
-  color: #0077B5;
+.icon .fa-linkedin-in {
+  color: #0077b5;
 }
-.link:hover{
-  background: #0077B5;
+.link:hover {
+  background: #0077b5;
 }
-.icon .fa-github{
+.icon .fa-github {
   color: #000;
 }
-.git:hover{
+.git:hover {
   background: #000;
 }
-.icon .fa-instagram{
+.icon .fa-instagram {
   color: rgb(255, 0, 115);
 }
-.inst:hover{
-  background: radial-gradient(circle at 10% 90%,rgb(187, 0, 255),rgb(255, 0, 217),red,yellow);
-
+.inst:hover {
+  background: radial-gradient(
+    circle at 10% 90%,
+    rgb(187, 0, 255),
+    rgb(255, 0, 217),
+    red,
+    yellow
+  );
 }
 
-.contect-right{
+.contect-right {
   flex-basis: 45%;
 }
-.contect-right form{
+.contect-right form {
   display: flex;
   align-content: center;
   justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
 }
-.contect-right form input,.contect-right form textarea{
+.contect-right form input,
+.contect-right form textarea {
   height: 3rem;
   background: var(--Transparent-lite);
   border-bottom: 0.2rem solid var(--lite-main);
@@ -755,37 +776,44 @@ transform: rotate(90deg);
   font-size: 1.3rem;
   padding-left: 1rem;
   color: white;
+  font-family: sans-serif;
+
 }
-.contect-right form input::placeholder , .contect-right form textarea::placeholder{
- color: rgba(255, 255, 255, 0.743);
+.contect-right form input::placeholder,
+.contect-right form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.743);
+  font-family: sans-serif;
+
 }
-.contect-right form textarea{
+.contect-right form textarea {
   height: 7rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-.contect-right form button , .get-resume{
+.contect-right form button,
+.get-resume {
   cursor: pointer;
   height: 3rem;
   width: 10rem;
-   font-size: 1.5rem;
-   background: var(--lite-dark);
+  font-size: 1.5rem;
+  background: var(--lite-dark);
+  font-family: sans-serif;
+
 }
-.contect-right span{
+.contect-right span {
   color: var(--lite-main);
   font-size: 1.2rem;
 }
 
-.copyright{
+.copyright {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 4rem;
   background: var(--mideam-dark);
   font-size: 1.5rem;
+  font-family: sans-serif;
+
 }
-
-
-
 
 /* ===================================  @media  ====================================== */
 /* ===================================  @media  ====================================== */
@@ -810,32 +838,33 @@ transform: rotate(90deg);
   nav .logo {
     font-size: 4rem;
   }
-  .header .fa-xmark,.header .fa-bars{
+  .header .fa-xmark,
+  .header .fa-bars {
     font-size: 3rem;
     display: block;
   }
-  #sidemenu{
+  #sidemenu {
     position: fixed;
     top: 0;
     right: -36rem;
     height: 100vh;
     width: 35rem;
-    background-color: #0077B5;
+    /* background-color: #0077b5; */
+    background-color: var(--lite-dark);
     padding: 3rem;
-    transition: .5s ease-in;
+    transition: 0.5s ease-in;
     z-index: 5;
-
   }
-  #sidemenu i{
+  #sidemenu i {
     margin-bottom: 5rem;
   }
-  #sidemenu li{
+  #sidemenu li {
     margin: 2rem 0;
-     display:block;
+    display: block;
   }
-  #sidemenu li a{
-     width: 100%;
-     font-size: 4rem;
+  #sidemenu li a {
+    width: 100%;
+    font-size: 4rem;
   }
   .header-content {
     margin: 70% auto;
@@ -911,8 +940,10 @@ transform: rotate(90deg);
     color: white;
     margin: 0 1.2rem;
     font-size: 1.5rem;
+    text-align: center;
   }
-  .services-container .box-content button,.explore-button {
+  .services-container .box-content button,
+  .explore-button {
     margin: 2rem auto;
     font-size: 1.5rem;
     padding: 0.7rem 2rem;
@@ -953,10 +984,10 @@ transform: rotate(90deg);
     font-size: 2rem;
   }
 
-  .project-view-container{
+  .project-view-container {
     flex-direction: column;
   }
-  .project-view-container .second{
+  .project-view-container .second {
     order: -1;
   }
 
@@ -965,9 +996,9 @@ transform: rotate(90deg);
     margin: 3rem 3rem 0;
   }
   .project-view-container .displaybox {
-    width: 100%; 
+    width: 100%;
   }
-  
+
   .project-view-container .displaybox .quote-box {
     padding: 2rem;
   }
@@ -987,10 +1018,10 @@ transform: rotate(90deg);
   .quote-box button {
     margin-top: 1rem;
     width: 11rem;
-    height: 2.5rem; 
+    height: 2.5rem;
     font-size: 1.2rem;
   }
-  
+
   .project-view-container .discription {
     padding: 1.5rem;
   }
@@ -998,30 +1029,31 @@ transform: rotate(90deg);
     font-size: 2.5rem;
   }
   .project-view-container .discription p {
+    margin-top: 1rem;
     font-size: 1.7rem;
+    text-align: center;
   }
   .project-view-container .displaybox-2 {
     order: 0;
   }
 
+  /* =================================  contect section  ====================================== */
 
-/* =================================  contect section  ====================================== */
-
-  .contect-container{
+  .contect-container {
     flex-direction: column;
     gap: 4rem;
     margin: 6rem 2rem 0 2rem;
   }
 
-
-  .contect-container .contect-left{
+  .contect-container .contect-left {
     align-items: center;
   }
-  .contect-left h2{
+  .contect-left h2 {
     width: 35rem;
     font-size: 2rem;
+    text-align: center;
   }
-  .social-icones{
+  .social-icones {
     margin-top: 3rem;
   }
   .social-icones .icon {
@@ -1030,29 +1062,29 @@ transform: rotate(90deg);
     font-size: 2.5rem;
     line-height: 4.2rem;
   }
-  .icon:hover{
-    width:4rem;
+  .icon:hover {
+    width: 4rem;
     cursor: pointer;
     display: block;
   }
 
-  .contect-right{
+  .contect-right {
     width: 100%;
   }
-  .contect-right form input,.contect-right form textarea{
+  .contect-right form input,
+  .contect-right form textarea {
     height: 3.5rem;
     font-size: 1.5rem;
   }
 
-  .contect-left button{
+  .contect-left button {
     margin-top: 3rem;
   }
-  #loder{
+  #loder {
     position: fixed;
     height: 100vh;
     width: 100%;
     z-index: 5;
     background-size: 65%;
   }
-
 }
